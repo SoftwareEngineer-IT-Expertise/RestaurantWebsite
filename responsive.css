@@ -1,0 +1,44 @@
+@media (max-width: 991px) {
+  .navigation-wrap {
+    background-color: #fff;
+  }
+
+  .navigation-wrap .nav-link {
+    color: #000 !important;
+  }
+
+  .navbar-toggler {
+    border-color: #000;
+    color: #000;
+  }
+
+  .containerAboutUs {
+    height: 700px;
+  }
+  .sectionFour {
+    height: 850px;
+  }
+  .columnTwoInSectionFour {
+    margin-top: 50px;
+  }
+  .colFirstInSectionFour {
+    margin-top: 10px;
+  }
+}
+
+/* Navbar when scrolling */
+.navigation-wrap.scroll-on {
+  background-color: var(--white-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Change navbar links to black */
+.navigation-wrap.scroll-on .nav-link {
+  color: var(--black-color) !important;
+}
+
+/* Logo remains visible */
+.navigation-wrap.scroll-on .navbar-toggler {
+  color: var(--black-color);
+  border-color: var(--black-color);
+}

@@ -1,0 +1,400 @@
+```css
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --primary-color: #ffc222;
+  --secondary-color: #00a149;
+  --white-color: #fff;
+  --text-color: #b0b0b0;
+  --black-color: #1e1d23;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+  font-size: 58px;
+  font-weight: 900;
+  color: var(--white-color);
+  text-shadow: 1px 0 6px #000;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  line-height: 3rem;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  min-height: 100vh;
+
+  background-image: url("bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navigation-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 1000;
+
+  transition: all 0.3s ease;
+}
+
+.navigation-wrap .navbar-brand img {
+  height: 61px;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  color: var(--white-color) !important;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navigation-wrap .main-btn {
+  margin-left: 10px;
+  padding: 5px 23px;
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.main-btn {
+  display: inline-block;
+
+  padding: 10px 30px;
+
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 8px;
+
+  color: var(--black-color);
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+
+/* =========================
+   TOP BANNER
+========================= */
+
+.top-banner {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.top-banner p {
+  color: var(--white-color);
+}
+
+.pre-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  margin-bottom: 80px;
+}
+
+.div {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--primary-color);
+  border-radius: 50%;
+
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.div:hover::before {
+  transform: scale(1);
+}
+
+.div img {
+  position: relative;
+  z-index: 1;
+
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
+}
+
+.div:hover img {
+  transform: scale(1.1);
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.containerAboutUs {
+  min-height: 450px;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+
+/* =========================
+   SECTION FOUR
+========================= */
+
+.sectionFour {
+  min-height: 600px;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.colFirstInSectionFour {
+  margin-top: 75px;
+}
+
+.divForImg2 {
+  background-color: var(--white-color);
+  border-radius: 3%;
+}
+
+.yellow-tick {
+  color: #ffd700;
+}
+
+
+/* =========================
+   SECTION FIVE
+========================= */
+
+.sectionFive {
+  margin-top: 50px;
+}
+
+
+/* =========================
+   REVIEW / CAROUSEL
+========================= */
+
+#testimonials {
+  min-height: 450px;
+  margin-top: 50px;
+
+  background-color: var(--secondary-color);
+}
+
+#sectionSixCenterBox {
+  min-height: 200px;
+  width: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: var(--black-color);
+  border-radius: 15px;
+}
+
+#sectionSixCenterBox img {
+  display: block;
+
+  width: auto;
+  max-width: 100%;
+  max-height: 150px;
+
+  object-fit: contain;
+}
+
+.btn1 {
+  width: 100px;
+  height: 30px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+
+  color: var(--white-color);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.lastContainer {
+  height: 150px;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.lastContainer i {
+  font-size: 20px;
+}
+
+.newsletter {
+  max-width: 500px;
+}
+
+
+/* =========================
+   EMAIL INPUT
+========================= */
+
+#lastInput {
+  background-color: transparent;
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+#lastInput::placeholder {
+  color: var(--white-color);
+  opacity: 1;
+}
+
+#lastInput:focus {
+  background-color: transparent;
+  color: var(--white-color);
+  border-color: var(--primary-color);
+
+  box-shadow: none;
+}
+
+
+/* =========================
+   SUBSCRIBE BUTTON
+========================= */
+
+#lastBtn {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: 1px solid var(--white-color);
+}
+
+#lastBtn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+```
